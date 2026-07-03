@@ -1,0 +1,125 @@
+.resume-header h1{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 70px;
+    height: 70px;
+    /* 사진 테두리 동그랗게 */
+    border-radius: 50%; 
+}
+
+.resume-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.resume-content a {
+    color: gray;
+    text-decoration: none;
+}
+
+.resume-content a:hover {
+    text-decoration: underline
+}
+
+.section-title {
+    border-left: 8px solid black;
+    padding-left: 16px;
+    font-size: x-large;
+    font-weight:bold;
+}
+.skill {
+    display: flex;
+    flex-wrap: wrap;   
+    gap: 12px;
+    
+}
+.sub-title{
+    font-weight:bold;
+    color:gray;
+    font-size: 14px;
+}
+.skill-tag {
+    background-color: lightgray;
+    color: #334155;
+    font-weight: bold;
+    font-size: 12px;
+    /* 캡슐모양 모서리 */
+    border-radius: 9999px;
+    /* 패딩 2개 쓰는 이유: */
+    padding: 8px 16px;
+    display: inline-block;     
+}
+.company{
+    display: flex;
+    font-size: medium;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.company-name {
+    font-size: 20px;
+    font-weight: bold;    
+}
+.duration{
+    color: lightslategray;
+    font-weight: bold;
+}
+.position{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.department{
+    color: rgba(55, 62, 69, 0.933);
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.Role {
+    border-left: 1px solid lightslategray;
+    padding-left: 10px;
+    font-size: 18px;
+    color: lightslategray
+}
+.task{
+    border-left: 1px solid lightslategray;
+}
+.main-task{
+    color: rgba(55, 62, 69, 0.933);
+    padding-left: 20px;
+    font-size:18px;
+    font-weight: bold;
+}
+.task-list{
+    font-size: 14px;
+    color: lightslategray;
+    padding-bottom: 10px;
+}
+.taskhr {
+    border: 0.01px solid rgba(226, 222, 222, 0.648);
+}
+.resume-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.date{
+    font-size: 14px;
+    font-weight: bold;    
+    color: lightslategray;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    
+}
+.school{
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 20px;
+    color: rgba(55, 62, 69, 0.933);
+}
