@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>암호화폐 가격변동 추적기</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="app">
+    <!-- 헤더 -->
+    <header>
+      <h1>암호화폐 가격변동 추적기</h1>
+      <p id="statusText">데이터 불러오는 중...</p>
+    </header>
+
+    <!-- 검색 및 메뉴 -->
+    <section class="controls">
+      <input id="searchInput" type="text" placeholder="코인 검색 예: BTC" />
+
+      <div class="tabs">
+        <button id="allTab" class="active">전체보기</button>
+        <button id="favoriteTab">관심항목 보기</button>
+      </div>
+    </section>
+
+    <section class="info">
+      <span>전체: <strong id="totalCount">0</strong></span>
+      <span>관심항목: <strong id="favoriteCount">0</strong></span>
+      <span>업데이트: <strong id="updatedAt">-</strong></span>
+    </section>
+    
+    <!-- 항목을 표로 생성 -->
+    <table>
+      <thead>
+        <tr>
+          <th>관심</th>
+          <th>심볼</th>
+          <th>현재가</th>
+          <th>24H 변동률</th>
+          <th>24H 고가</th>
+          <th>24H 저가</th>
+          <th>거래량</th>
+        </tr>
+      </thead>
+      <tbody id="coinTableBody"></tbody>
+    </table>
+
+    <!-- id=js가 찾기위한 이름표, class = css가 찾기위한 이름표, hidden= HTML의 속성 -->
+    <p id="emptyMessage" class="empty" hidden>표시할 암호화폐가 없습니다.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
